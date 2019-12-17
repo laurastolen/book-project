@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+
+<head></head>
+
+<body>
+  <h1>Search Results</h1>
+  <p><a href="/">Home</a></p>
+  <ul>
+    <% books.forEach(book => { %>
+    <li><img src="<%= book.image_url %>" /><br><%= book.title %><br><%=book.author%><br><%= book.description %></li>
+    <% }) %>
+  </ul>
+</body>
+
+</html>
