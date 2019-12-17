@@ -33,31 +33,31 @@ Finish time: 10:00
 
 Actual time needed to complete: 45 minutes
 
-Number and name of feature: #2: 
+Number and name of feature: #2: setting up search on front end
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 10 minutes
 
-Start time: _____
+Start time: 10:00
 
-Finish time: _____
+Finish time: 10:10
 
-Actual time needed to complete: _____
+Actual time needed to complete: 10 minutes
 
-Number and name of feature: #3:
+Number and name of feature: #3: API search feature
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 45 minutes
 
-Start time: _____
+Start time: 10:10
 
-Finish time: _____
+Finish time: 11:45
 
-Actual time needed to complete: _____
+Actual time needed to complete: 1 hour 35 minutes
 
-Number and name of feature: #4:
+Number and name of feature: #4: error handling
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 20 minutes
 
-Start time: _____
+Start time: 11:45
 
 Finish time: _____
 
