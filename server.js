@@ -43,9 +43,9 @@ function getBooks(request, response) {
       } else {
         returnArray = bookArray;
       }
-
       response.render('pages/searches/show', { books: returnArray, });
-    });
+    })
+    .catch((err) => response.render('pages/error'));
 }
 
 
