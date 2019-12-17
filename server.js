@@ -13,6 +13,9 @@ app.use(express.urlencoded());
 
 app.get('/', getForm);
 app.post('/searches', getBooks);
+app.get('*', (request, response) => {
+  response.render('pages/error');
+});
 
 function getForm(request, response) {
   response.render('pages/index');
@@ -53,13 +56,13 @@ function Book(bookObj) {
   // console.log(bookObj.imageLinks)
   const placeholderImage = 'https://images.pexels.com/photos/1005324/literature-book-open-pages-1005324.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260';
   if (bookObj.imageLinks) {
-    if (bookObj.imageLinks.smallThumbnail === '') {
+    if (bookObj.imageLinks.thumbnail === '') {
       this.image_url = placeholderImage;
     }
-    else if (bookObj.imageLinks.smallThumbnail.slice(0, 5) !== 'https') {
-      this.image_url = 'https' + bookObj.imageLinks.smallThumbnail.slice(5, bookObj.imageLinks.smallThumbnail.length);
+    else if (bookObj.imageLinks.thumbnail.slice(0, 5) !== 'https') {
+      this.image_url = 'https' + bookObj.imageLinks.thumbnail.slice(4, bookObj.imageLinks.thumbnail.length);
     } else {
-      this.image_url = bookObj.imageLinks.smallThumbnail;
+      this.image_url = bookObj.imageLinks.thumbnail;
     }
   } else {
     this.image_url = placeholderImage;

@@ -63,9 +63,9 @@ Finish time: 11:50
 
 Actual time needed to complete: 5 minutes
 
-Number and name of feature: #5: 
+Number and name of feature: #5: UI
 
-Estimate of time needed to complete: _____
+Estimate of time needed to complete: 45 minutes
 
 Start time: _____
 
